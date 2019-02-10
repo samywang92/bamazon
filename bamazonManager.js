@@ -71,7 +71,7 @@ function viewLowInventory() {
 
     connection.query(`SELECT * FROM products WHERE stock_quantity < 5;`, function (err, res) {
         if (err) throw err;
-        for (var i in res) {
+        for (var i in res) { //try for each
             data.push([res[i].item_id, res[i].product_name, res[i].department_name, res[i].price, res[i].stock_quantity, res[i].product_sales]);
         }
         output = table(data);

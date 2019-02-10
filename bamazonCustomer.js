@@ -47,9 +47,7 @@ function init() {
       message: "How many?",
       name: "amt"
     }
-
-  ])
-    .then(answers => {
+  ]).then(answers => {
       var id = Number(answers.itemID);
       var amt = Number(answers.amt);
       connection.query(`SELECT * FROM products WHERE item_id = ?;`,[id], function (err, res) {
