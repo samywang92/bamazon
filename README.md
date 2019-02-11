@@ -1,5 +1,5 @@
 # bamazon
-This application is a bare bone version of Amazon.
+This application is a bare bone version of Amazon.  It reads from a SQL database that contains different products.
 Allows 2 views: Customer and Manager
 
 # Custmer View
@@ -21,5 +21,5 @@ The manager is able to view items that are low in inventory (below 5).
 ![custumer_view](/images/update.png)
 The manager is able to update items in the inventory.  If the item does not exist, it will let the user know.
 
-![custumer_view](/images/up.png)
+![custumer_view](/images/add.png)
 The manager is able to add a new item to the inventory.
